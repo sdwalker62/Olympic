@@ -20,4 +20,10 @@ RUN conda install -y \
     tqdm \
     python=3.10
 
+
+# Install pip packages
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt
+RUN rm /tmp/requirements.txt
+
 ENTRYPOINT ["top", "-b"]
