@@ -36,4 +36,5 @@ jobs:
           context: .
           file: ./docker/dev-container/Dockerfile
           push: true
-          tags: athena-ml/olympic-dev-container:latest
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
