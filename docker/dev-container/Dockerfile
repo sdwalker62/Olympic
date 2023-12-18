@@ -5,7 +5,10 @@ LABEL authors="Athena Team + Collaborators"
 
 # Install System Dependencies
 RUN apt-get -y update \
-    && apt-get install -y wget
+    && apt-get install -y \
+    wget \
+    swig \
+    build-essential
 
 # Install Miniconda3
 RUN mkdir -p ~/miniconda3 \
