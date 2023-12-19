@@ -3,3 +3,4 @@ ivy
 jupyter-lab
 jupyter
 pillow
+dm-haiku
