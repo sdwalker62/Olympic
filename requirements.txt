@@ -4,3 +4,4 @@ jupyter-lab
 jupyter
 pillow
 dm-haiku
+kornia
